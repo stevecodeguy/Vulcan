@@ -26,7 +26,7 @@ gulp.task('hello', function() {
   console.log('Hello, Class!');
 });
 
-// SASS Task
+// Sass Task
 gulp.task('sass', function(){
 	return gulp.src('dev/scss/**/*.scss')
 		.pipe(sourcemaps.init())
