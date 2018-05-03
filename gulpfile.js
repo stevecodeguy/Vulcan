@@ -23,7 +23,7 @@ const minify = composer(uglifyES);
 
 // Intro Hello Task...
 gulp.task('hello', function() {
-  console.log('Hello, Michael');
+  console.log('Hello, Class!');
 });
 
 // SASS Task
