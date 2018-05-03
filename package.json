@@ -1,7 +1,7 @@
 {
-  "name": "group-project",
+  "name": "twd-group-project",
   "version": "1.0.0",
-  "description": "Responsive blog group project",
+  "description": "Group project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,8 @@
     "type": "git",
     "url": ""
   },
-  "keywords": [
-    "blog"
-  ],
-  "author": "Students",
+  "keywords": [],
+  "author": "TWD Students",
   "license": "ISC",
   "bugs": {
     "url": ""
