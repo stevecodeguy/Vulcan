@@ -15,7 +15,8 @@ To install this project do the following:
 ### Option 1 - Using the Terminal (Mac) / CMD Prompt (Windows)
 
 <ol>
-  <li>foo</li>
+  <li>Click the green "Clone or Download" button located above this repo's file listings<br><img src="https://res.michaelwhyte.ca/github-clone-download-button-with-red-circle.jpg" alt="GitHub clone or download button"></br></li>
+
 </ol>
 
 1. Click the green "Clone or Download" button located above this repo's file listings
