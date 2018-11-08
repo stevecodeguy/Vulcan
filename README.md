@@ -23,10 +23,20 @@ To install this project do the following:
 <ol>
   <li>Click the green "Clone or Download" button located above this repo's file listings<br><br><img src="https://res.michaelwhyte.ca/github-clone-download-button-with-red-circle.jpg" alt="GitHub clone or download button"><br><br></li>
   <li>Once the clone dialog has opened, click the copy icon to copy this repo's clone URL<br><br><img src="https://res.michaelwhyte.ca/github-clone-repo-dialog.jpg" alt="GitHub clone repo dialog"><br><br></li>
-  <li>On your local computer open the terminal app (Mac) or PowerShell or CMD Prompt on Windows
+  <li>On your local computer open the Terminal app (Mac) or PowerShell or CMD Prompt on Windows</li>
+  <li>With your terminal application open, change the directory to a folder on your computer that you want save this repo to.<br><br>
+    <div class="highlight highlight-shell">
+      <pre>
+$ cd the\path\to\the\folder\where\you\want\to\store\this\repo...
+      </pre>
+    </div><br><br>
 </ol>
 
 1. Click the green "Clone or Download" button located above this repo's file listings
+
+```shell
+$ sass --watch scss:styles
+```
 
 ![GitHub clone or download button](https://res.michaelwhyte.ca/github-clone-download-button-with-red-circle.jpg)
 
