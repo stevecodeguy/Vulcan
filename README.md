@@ -31,7 +31,7 @@ $ cd the\path\to\the\folder\where\you\want\to\store\this\repo...</pre>
     </div>
     <p><strong>Important: </strong>Do <strong>NOT</strong> store this repo inside a cloud drive such as Dropbox, Google Drive, Sharefile or One Drive. Doing so will cause errors. Remember your code will be backed up to GitHub in the cloud, so your data is safe in the event that you loose a local copy of this repo.</p></li>
   </li>
-  <li>With your terminal pointing to the location where you want to store the repo, enter the git clone command followed a space. Then paste in this repos clone URL (copied in list item 2, above). Use "Cmd+v" on a Mac or "Ctrl+v" on a Windows machine to do this. Then press enter and Git will clone this repo down to your computer. See sample terminal command below. Do NOT copy this command into your terminal, it will not work. Paste in your URL from list item 2.<br><br>
+  <li>With your terminal pointing to the location where you want to store the repo, enter the git clone command followed by a space. Then paste in this repo's clone URL (copied in list item 2, above). Use "Cmd+v" on a Mac or "Ctrl+v" on a Windows machine to do this. Then press enter and Git will clone this repo down to your computer.<br><br>See sample terminal command below. Do NOT copy this command into your terminal, it will not work. Paste in your URL from list item 2 above.<br><br>
   <div class="highlight highlight-source-shell">
     <pre>
 $ repos> git clone https://github.com/path-to-some-repo/do-not-copy-this-url.gitD</pre>
