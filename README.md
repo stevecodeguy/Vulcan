@@ -28,7 +28,7 @@ To install this project do the following:
     <div class="highlight highlight-source-shell">
       <pre>
 $ cd the\path\to\the\folder\where\you\want\to\store\this\repo...</pre>
-    </div><br><br>
+    </div>
     <p><strong>Important: </strong>Do <strong>NOT</strong> store this repo inside a cloud drive such as Dropbox, Google Drive, Sharefile or One Drive. Doing so will cause errors. Remember your code will be backed up to GitHub in the cloud, so your data is save in the event that you loose a local copy of your repo.</p> 
 </ol>
 
