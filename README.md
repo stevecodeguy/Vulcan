@@ -11,8 +11,8 @@ Don't be a cowboy coder. Read and follow the below instructions.
 
 The following instructions, assume you have already installed Git and / or the GitHub Desktop application on your computer system. 
 
-- ![Install Git](https://git-scm.com/)
-- ![Install the GitHub Desktop Application](https://desktop.github.com/)
+- [Install Git](https://git-scm.com/)
+- [Install the GitHub Desktop Application](https://desktop.github.com/)
 
 To install this project do the following:
 
