@@ -18,6 +18,12 @@ To install this project do the following:
 
 ### 1. Clone this Repo
 
+### Option 1 - Using the GitHub Desktop Application
+
+1. Open the GitHub desktop application
+..* **Note:** If you haven't already done so, make sure to sign in to your GitHub account from within the application. You can do so by going to "Github > Preferences" on the Mac app or "File > Options" on a PC.
+2. 
+
 ### Option 2 - Using the Terminal (Mac) / CMD Prompt (Windows)
 
 <ol>
@@ -34,18 +40,12 @@ $ cd the\path\to\the\folder\where\you\want\to\store\this\repo...</pre>
   <li>With your terminal pointing to the location where you want to store the repo, enter the git clone command followed by a space. Then paste in this repo's clone URL (copied in list item 2, above). Use "Cmd+v" on a Mac or "Ctrl+v" on a Windows machine to do this. Then press enter and Git will clone this repo down to your computer.<br><br>See sample terminal command below. Do NOT copy this command into your terminal, it will not work. Paste in your URL from list item 2 above.<br><br>
   <div class="highlight highlight-source-shell">
     <pre>
-$ repos> git clone https://github.com/path-to-some-repo/do-not-copy-this-url.gitD</pre>
+$ repos> git clone https://github.com/path-to-some-repo/do-not-copy-this-url.git</pre>
   </div>
 </li>
 </ol>
 
-1. Click the green "Clone or Download" button located above this repo's file listings
 
-```shell
-$ sass --watch scss:styles
-```
-
-![GitHub clone or download button](https://res.michaelwhyte.ca/github-clone-download-button-with-red-circle.jpg)
 
 2. Click the copy icon to copy this repo's clone URL
 3. Another item
