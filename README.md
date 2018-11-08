@@ -20,9 +20,10 @@ To install this project do the following:
 
 ### Option 1 - Using the GitHub Desktop Application
 
+
 1. Open the GitHub desktop application
-..* **Note:** If you haven't already done so, make sure to sign in to your GitHub account from within the application. You can do so by going to "Github > Preferences" on the Mac app or "File > Options" on a PC.
-2. 
+⋅⋅* **Note:** If you haven't already done so, make sure to sign in to your GitHub account from within the application. You can do so by going to "Github > Preferences" on the Mac app or "File > Options" on a PC.
+
 
 ### Option 2 - Using the Terminal (Mac) / CMD Prompt (Windows)
 
