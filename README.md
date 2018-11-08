@@ -34,7 +34,7 @@ $ cd the\path\to\the\folder\where\you\want\to\store\this\repo...</pre>
   <li>With your terminal pointing to the location where you want to store the repo, enter the git clone command followed a space. Then paste in this repos clone URL (copied in list item 2, above). Use "Cmd+v" on a Mac or "Ctrl+v" on a Windows machine to do this. Then press enter and Git will clone this repo down to your computer. See sample terminal command below. Do NOT copy this command into your terminal, it will not work. Paste in your URL from list item 2.<br><br>
   <div class="highlight highlight-source-shell">
     <pre>
-    $ repos> git clone https://github.com/path-to-some-repo/do-not-copy-this-url.git
+$ repos> git clone https://github.com/path-to-some-repo/do-not-copy-this-url.gitD</pre>
   </div>
 </li>
 </ol>
