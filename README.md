@@ -24,12 +24,19 @@ To install this project do the following:
   <li>Click the green "Clone or Download" button located above this repo's file listings<br><br><img src="https://res.michaelwhyte.ca/github-clone-download-button-with-red-circle.jpg" alt="GitHub clone or download button"><br><br></li>
   <li>Once the clone dialog has opened, click the copy icon to copy this repo's clone URL<br><br><img src="https://res.michaelwhyte.ca/github-clone-repo-dialog.jpg" alt="GitHub clone repo dialog"><br><br></li>
   <li>On your local computer open the Terminal app (Mac) or PowerShell or CMD Prompt on Windows</li>
-  <li>With your terminal application open, change the directory to a folder on your computer that you want save this repo.<br><br>
+  <li>With your terminal application open, change the directory to a folder on your computer that you want save this repo. Enter the "cd" command followed by the path to the location where you want this to saved on your computer and press "Enter". Do not enter the "$" character. The "$" represents your terminal prompt.<br><br>
     <div class="highlight highlight-source-shell">
       <pre>
 $ cd the\path\to\the\folder\where\you\want\to\store\this\repo...</pre>
     </div>
-    <p><strong>Important: </strong>Do <strong>NOT</strong> store this repo inside a cloud drive such as Dropbox, Google Drive, Sharefile or One Drive. Doing so will cause errors. Remember your code will be backed up to GitHub in the cloud, so your data is save in the event that you loose a local copy of your repo.</p> 
+    <p><strong>Important: </strong>Do <strong>NOT</strong> store this repo inside a cloud drive such as Dropbox, Google Drive, Sharefile or One Drive. Doing so will cause errors. Remember your code will be backed up to GitHub in the cloud, so your data is safe in the event that you loose a local copy of this repo.</p></li>
+  </li>
+  <li>With your terminal pointing to the location where you want to store the repo, enter the git clone command followed a space. Then paste in this repos clone URL (copied in list item 2, above). Use "Cmd+v" on a Mac or "Ctrl+v" on a Windows machine to do this. Then press enter and Git will clone this repo down to your computer. See sample terminal command below. Do NOT copy this command into your terminal, it will not work. Paste in your URL from list item 2.<br><br>
+  <div class="highlight highlight-source-shell">
+    <pre>
+    $ repos> git clone https://github.com/path-to-some-repo/do-not-copy-this-url.git
+  </div>
+</li>
 </ol>
 
 1. Click the green "Clone or Download" button located above this repo's file listings
