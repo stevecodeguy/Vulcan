@@ -99,7 +99,7 @@ Most of your time will be spent writing the code to "build" this project. To bui
 
 Make sure your terminal application is pointing at the root directory of this repository.
 
-With your terminal application at this repo's root directory, enter the following command into your terminal application:
+With your terminal application at this repo's root directory, enter the following command into your terminal application and press enter:
 
 ```shell
 $ gulp
