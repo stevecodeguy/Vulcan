@@ -93,7 +93,21 @@ That's it! You have installed this repo and are now ready to run and build this 
 
 ## Build Instructions
 
-Most of your time will be spent writing the code to "build" this project
+Most of your time will be spent writing the code to "build" this project. To build this project properly, please follow these instructions.
+
+### 1. CD To Your Repo and Run Gulp
+
+Make sure your terminal application is pointing at the root directory of this repository.
+
+With your terminal application at this repo's root directory, enter the following command into your terminal application:
+
+```shell
+$ gulp
+```
+
+The above terminal command will fire up Gulp, which in turn will run BrowserSync for automatic browser refreshes on code changes and the Sass compiler for compiling Sass.
+
+**Note:** There is no need to run a "sass --watch" command for this project. Gulp takes care of all the Sass compiling for you.
 
 
 
