@@ -115,5 +115,29 @@ Don't forget to commit and push your changes to this repo up to GitHub throughou
 
 **Note:** There is no need to run a "sass --watch" command for this project. Gulp takes care of all the Sass compiling for you.
 
+## Submission Instructions
 
+Follow these steps to properly submit your project. Failure to follow these submission instructions will result in lost marks.
 
+1. Launch your terminal application and change the directory to the location of this repo on your computer
+2. Enter the following command into the terminal and press enter:
+```shell
+$ gulp build
+```
+3. Step 2 will run the Gulp build command which will compile (Sass) and compress all your project's code files and copy them to a "dist" folder automatically. With that done, simply commit and push up the newly generated "dist" files to GitHub using the GitHub app or the terminal
+
+Once you have completed the above three steps, that is it. No need to email your instructor. Your instructor will check your GitHub repo for this project and mark the files inside the "dist" folder.
+
+**Note:** Only one team member needs to run the "gulp build" command.
+
+## FAQ's
+
+### Q. Our CSS files and our styles folder are not pushing up to GitHub?
+
+That is the correct behaviour. Version controlling compiled CSS files will lead to constant merge conflicts. Not having compiled CSS files in the GitHub repo is not an issue because any team member can easily regenerate the compiled CSS files by running the "gulp" command in the terminal.
+
+### How do I install Google Fonts
+
+The easiest method is to grab the "link" code from Google Fonts and place it in the head section of the index.html file of this project.
+
+**IMPORTANT** Do not place the "link" code for the Google Fonts in-between the "css:build" comments. Doing so will cause errors when your run the project submission instructions. See the comments in the index.html file for details on where to put the Google fonts link code.
