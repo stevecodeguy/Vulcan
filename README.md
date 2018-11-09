@@ -1,7 +1,7 @@
 # TWD Group Project
 This is a TWD group project.
 
-## Project Installation and Submission Instructions
+## Project Installation, Building and Submission Instructions
 
 **IMPORTANT:** Please follow both the install and the project instructions fully. Failure to do so will result in development errors, build errors, project submission errors and loss of marks for not following instructions.
 
@@ -75,5 +75,25 @@ $ sudo npm install gulp -g
 ```shell
 $ npm install gulp -g
 ```
+### 3. Install this Repo's Node Dependencies
+
+In the Terminal app (Mac) or the Node.js CMD Prompt or PowerShell (Windows), change the directory to the directory where you cloned this repo on your computer in step 1.
+
+```shell
+$ yourComputer> cd the/path/to/your/repo/on/your/computer
+```
+
+With your terminal application pointed at this repo's folder, type the following command and press enter.
+
+```shell
+$ npm install
+```
+
+That's it! You have installed this repo and are now ready to run and build this project.
+
+## Build Instructions
+
+Most of your time will be spent writing the code to "build" this project
+
 
 
