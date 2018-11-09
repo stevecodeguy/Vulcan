@@ -33,6 +33,7 @@ To install this project do the following:
       <li><strong>Important: </strong>Do <strong>NOT</strong> store this repo inside a cloud drive such as Dropbox, Google Drive, Sharefile or One Drive. Doing so will cause errors. Remember your code will be backed up to GitHub in the cloud, so your data is safe in the event that you loose a local copy of this repo.</li>
     </ul>
   </li>
+</ol>
 
 ### Option 2 - Using the Terminal (Mac) / CMD Prompt (Windows)
 
