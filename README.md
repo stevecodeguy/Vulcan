@@ -1,7 +1,7 @@
 # TWD Group Project
 This is a TWD group project.
 
-## Project Installation and Submission Instrutions
+## Project Installation and Submission Instructions
 
 **IMPORTANT:** Please follow both the install and the project instructions fully. Failure to do so will result in development errors, build errors, project submission errors and loss of marks for not following instructions.
 
