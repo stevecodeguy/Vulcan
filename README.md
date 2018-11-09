@@ -80,7 +80,7 @@ $ npm install gulp -g
 In the Terminal app (Mac) or the Node.js CMD Prompt or PowerShell (Windows), change the directory to the directory where you cloned this repo on your computer in step 1.
 
 ```shell
-$ yourComputer> cd the/path/to/your/repo/on/your/computer
+$ your-computer> cd the/path/to/your/repo/on/your/computer
 ```
 
 With your terminal application pointed at this repo's folder, type the following command and press enter.
