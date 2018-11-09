@@ -63,7 +63,7 @@ $ repos> git clone https://github.com/path-to-some-repo/do-not-copy-this-url.git
 
 Install Gulp.js globally on your machine by launching the terminal app on a Mac, the Node.js CMD Prompt or Powershell on Windows and typing the following command and pressing enter:
 
-#### Mac Terminal Command
+#### Mac Terminal
 
 ```shell
 $ sudo npm install gulp -g 
