@@ -9,8 +9,9 @@ Don't be a cowboy coder. Read and follow the below instructions.
 
 ## Install Instructions
 
-The following instructions, assume you have already installed Git and / or the GitHub Desktop application on your computer system. 
+The following instructions, assume you have already installed, Node.js, Git and / or the GitHub Desktop application on your computer system. 
 
+- [Install Node.js](https://nodejs.org/)
 - [Install Git](https://git-scm.com/)
 - [Install the GitHub Desktop Application](https://desktop.github.com/)
 
@@ -56,11 +57,23 @@ $ repos> git clone https://github.com/path-to-some-repo/do-not-copy-this-url.git
 </li>
 </ol>
 
+### 2. Install Gulp Globally
+
+**Note:** If you have already installed Gulp globally on your computer for another project, then you can skip this step.
+
+Install Gulp.js globally on your machine by launching the terminal app on a Mac, the Node.js CMD Prompt or Powershell on Windows and typing the following command and pressing enter:
+
+#### Mac Terminal Command
+
+```shell
+$ sudo npm install gulp -g 
+```
+**Note:** On a Mac after entering the above command you will be prompted to enter your computer's login password. When you enter the password into the terminal nothing will appear to be happening. This is normal, just keep typing your password and then press enter.
+
+#### Windows Node.js CMD Prompt or PowerShell
+
+```shell
+$ npm install gulp -g
+```
 
 
-2. Click the copy icon to copy this repo's clone URL
-3. Another item
-⋅⋅* Unordered sub-list. 
-4. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-5. And another item.
