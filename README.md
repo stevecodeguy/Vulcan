@@ -91,7 +91,7 @@ $ npm install
 
 That's it! You have installed this repo and are now ready to run and build this project.
 
-## Build Instructions
+## Building Instructions
 
 Most of your time will be spent writing the code to "build" this project. To build this project properly, please follow these instructions.
 
@@ -106,6 +106,12 @@ $ gulp
 ```
 
 The above terminal command will fire up Gulp, which in turn will run BrowserSync for automatic browser refreshes on code changes and the Sass compiler for compiling Sass.
+
+Once the above command has been entered, you can just write all your code throughout the day and Gulp will watch your files and compile Sass as needed. No further interaction on your part is needed.
+
+Run this "gulp" command at the start of each day to re-start Gulp.
+
+Don't forget to commit and push your changes to this repo up to GitHub throughout the day.
 
 **Note:** There is no need to run a "sass --watch" command for this project. Gulp takes care of all the Sass compiling for you.
 
