@@ -21,12 +21,18 @@ To install this project do the following:
 ### Option 1 - Using the GitHub Desktop Application
 
 <ol>
-  <li>Open the GitHub desktop application<br><br>
-    **Note:** If you haven't already done so, make sure to sign in to your GitHub account from within the application. You can do so by going to "Github > Preferences" on the Mac app or "File > Options" on the Windows app</li>
+  <li>Open the GitHub desktop application
+    <ul>
+      <li><strong>Note:</strong> If you haven't already done so, make sure to sign in to your GitHub account from within the application. You can do so by going to "Github > Preferences" on the Mac app or "File > Options" on the Windows app</li>
+    </ul>
+  </li>
   <li>Clone this repo by going to "File > Clone Repository" from within the application</li>
   <li>Select the "GitHub.com" tab and find this repo from the list of repos listed</li>
-  </li>Before clicking the "Clone" button, first select a location on your computer where you want to store this repository<br><br>
-  <strong>Important: </strong>Do <strong>NOT</strong> store this repo inside a cloud drive such as Dropbox, Google Drive, Sharefile or One Drive. Doing so will cause errors. Remember your code will be backed up to GitHub in the cloud, so your data is safe in the event that you loose a local copy of this repo.</li> 
+  <li>Before clicking the "Clone" button, first select a location on your computer where you want to store this repository by clicking the "Choose" button
+    <ul>
+      <li><strong>Important: </strong>Do <strong>NOT</strong> store this repo inside a cloud drive such as Dropbox, Google Drive, Sharefile or One Drive. Doing so will cause errors. Remember your code will be backed up to GitHub in the cloud, so your data is safe in the event that you loose a local copy of this repo.</li>
+    </ul>
+  </li>
 
 ### Option 2 - Using the Terminal (Mac) / CMD Prompt (Windows)
 
