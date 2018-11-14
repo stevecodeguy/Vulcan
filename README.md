@@ -75,7 +75,7 @@ $ sudo npm install gulp -g
 ```shell
 $ npm install gulp -g
 ```
-### 3. Install this Repo's Node Dependencies
+### 3. Install this Repo's Node.js Dependencies
 
 In the Terminal app (Mac) or the Node.js CMD Prompt or PowerShell (Windows), change the directory to the directory where you cloned this repo on your computer in step 1.
 
