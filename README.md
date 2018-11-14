@@ -3,7 +3,7 @@ This is a TWD group project.
 
 ## Project Installation, Building and Submission Instructions
 
-**IMPORTANT:** Please follow both the install and the project instructions fully. Failure to do so will result in development errors, build errors, project submission errors and loss of marks for not following instructions.
+**IMPORTANT:** Please follow both the install and the submission instructions fully. Failure to do so will result in development errors, build errors, project submission errors and loss of marks for not following instructions.
 
 Don't be a cowboy coder. Read and follow the below instructions.
 
