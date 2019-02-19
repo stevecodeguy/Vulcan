@@ -87,6 +87,12 @@ node_modules/
 dev/styles/*.css
 dev/styles/*.map
 
+# Ignore package-lock.json file
+# Note: package-lock.json file causes errors
+# on initial install of project on BCIT
+# computers...so we will ignore it here
+package-lock.json
+
 
 # Misc files to ignore #
 ########################
