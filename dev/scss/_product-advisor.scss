@@ -11,24 +11,25 @@
 //     }
 // }
 
+
 .product-advisor-wave {
     position: relative;
-    bottom: -1%;
-    left: 30%;
+    width: 100%;
+    background: white;
+    border: 1px solid red;
 
-    img {
-        object-fit: fill;
-        max-height: 25px;
-        width: 100%;
+    img{
+        display: block;
         transform: scale(2);
     }
 }
+
 
 .product-advisor {
     background-color: $brand-color-dark-blue;
     position: relative;
     color: white;
-    padding: 0 10px;
+    padding: 0 0px;
 
     h3 {
         font-size: 1.5em;
