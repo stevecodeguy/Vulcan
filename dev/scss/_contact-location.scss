@@ -1,11 +1,18 @@
 .contact-location {
     display: grid;
+    grid-template-areas:
+    "location"
+    "contact";
 }
 
 .contact-us {
     border: 1px solid red;
+    grid-area: contact;
+    min-height: 334px;
 }
 
 .location {
     border: 1px solid purple;
+    grid-area: location;
+    min-height: 334px;
 }
