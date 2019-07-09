@@ -79,11 +79,12 @@
             text-transform: uppercase;
             text-align: center;
             color: white;
-            font-size: 1.0em;
+            font-size: 0.9em;
             padding: 10px;
             border: 1px solid white;
             margin: 7.5px auto;
             transition: all 0.3s ease;
+            width: 135px;
 
             &:hover {
                 background-color: white;
