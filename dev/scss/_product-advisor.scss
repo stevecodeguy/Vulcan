@@ -1,29 +1,16 @@
-// .product-advisor-wave{        
-//     position: relative;
-//     bottom: 0px;
-//     // overflow: hidden;
-        
-//     img {
-//         object-fit: fill;
-//         transform: scale(2);
-//         max-height: 25px;
-//         width: 100%;
-//     }
-// }
-
-
 .product-advisor-wave {
     position: relative;
+    bottom: 0;
+    left: 30%;
     width: 100%;
-    background: white;
-    border: 1px solid red;
 
-    img{
+    img {
         display: block;
+        left: 0;
+        height: 70px;
         transform: scale(2);
     }
 }
-
 
 .product-advisor {
     background-color: $brand-color-dark-blue;

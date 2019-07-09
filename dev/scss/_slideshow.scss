@@ -1,10 +1,9 @@
 .slideshow {
     overflow: hidden;
     width: 100%;
-    height: 625px;
+    height: 725px;
     background: white;
     position: relative;
-    // border: 2px solid purple;
 
     .slides {
         position: absolute;
@@ -12,21 +11,18 @@
         left: 0;
         width: 100%;
         height: 100%;
-        // border: 2px solid red;
 
         img {
-            // transform: scale(10);
             height: 100%;
             width: 100%;
             object-fit: cover;
-            // border: 2px solid yellow;
         }
     }
     
     .slideshow-dot {
         display: inline-block;
         position: absolute;
-        bottom: 10%;
+        bottom: 20%;
         left: 50%;
         transform: translate(-50%, 0);
 
@@ -43,13 +39,14 @@
 
     .slideshow-wave {
         position: absolute;
-        bottom: -1%;
+        bottom: 0;
         left: 30%;
+        width: 100%;
 
         img {
-            object-fit: fill;
-            max-height: 25px;
-            width: 100%;
+            display: block;
+            left: 0;
+            height: 70px;
             transform: scale(2);
         }
     }
@@ -73,7 +70,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 70%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
 
