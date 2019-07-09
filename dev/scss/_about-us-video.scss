@@ -1,0 +1,14 @@
+.about-us-video {
+    // padding: 50px;
+    background-color: rgba(0, 157, 220, 1);
+    padding: 50px;
+
+    .video-container {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        max-width: 600px;
+        max-height: 350px;
+        border: 20px solid $brand-color-dark-blue;
+    }
+}

@@ -3,16 +3,103 @@
     grid-template-areas:
     "location"
     "contact";
+    
+    h2 {
+        text-align: center;
+        font-size: 1.8em;
+        text-transform: uppercase;
+    }
+
+    a {
+        transition: all 0.3s ease;
+    }
 }
 
 .contact-us {
-    border: 1px solid red;
+    background-color: $brand-color-dark-blue;
     grid-area: contact;
     min-height: 334px;
+    position: relative;
+
+    h2 {
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+    }
+
+    a {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        width: 120px;
+
+        &:hover {
+            background-color: white;
+            color: $brand-color-dark-blue;
+        }
+    }
+
+    .contact-wave {
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        width: 100%;
+
+        img {
+            display: block;
+            left: 0;
+            height: 60px;
+            transform:scale(2);
+        }
+    }
 }
 
 .location {
-    border: 1px solid purple;
     grid-area: location;
     min-height: 334px;
+    background-image: url("../images/map.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    h2 {
+        color: $brand-color-grey;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        width: 290px;
+        transform: translate(-50%, -50%);
+    }
+
+    a {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        color: $brand-color-grey;
+        border: 1px solid black;
+        padding: 10px;
+        width: 205px;
+        
+        &:hover {
+            background-color: $brand-color-grey;
+            border: 1px solid $brand-color-grey;
+            color: white;
+        }
+    }
 }

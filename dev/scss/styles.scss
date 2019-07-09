@@ -23,11 +23,16 @@
 // About
 @import 'about';
 
+// About Us Video
+@import 'about-us-video';
+
 // Newsletter
 @import 'newsletter';
 
 // Contact & Location
 @import 'contact-location';
+
+
 
 svg {
     // display: none;
@@ -35,5 +40,5 @@ svg {
 }
 
 .about-us-video {
-    display: none;
+    // display: none;
 }
