@@ -1,7 +1,32 @@
 header {
-    svg {
-        background-color: black;
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    background-color: rgba(black, 0.5);
+    width: 100%;
+
+    a {
+        display: block;
         width: 100px;
         height: 50px;
+
+        svg {
+            // background-color: black;
+            width: 100px;
+            height: 50px;
+        }
+    }
+
+    nav {
+        display: none;
+    }
+
+    .left-links {
+        display: none;
+    }
+
+    .right-links {
+        display: none;
     }
 }
