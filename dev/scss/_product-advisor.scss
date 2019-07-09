@@ -1,13 +1,28 @@
-    .product-advisor-wave{        
-        position: relative;
-        bottom: 0px;
+// .product-advisor-wave{        
+//     position: relative;
+//     bottom: 0px;
+//     // overflow: hidden;
         
-        img {
-            object-fit: fill;
-            transform: scale(2);
-        }
+//     img {
+//         object-fit: fill;
+//         transform: scale(2);
+//         max-height: 25px;
+//         width: 100%;
+//     }
+// }
 
+.product-advisor-wave {
+    position: relative;
+    bottom: -1%;
+    left: 30%;
+
+    img {
+        object-fit: fill;
+        max-height: 25px;
+        width: 100%;
+        transform: scale(2);
     }
+}
 
 .product-advisor {
     background-color: $brand-color-dark-blue;
@@ -21,16 +36,18 @@
         text-align: center;
         margin-top: 0;
         margin-bottom: 0;
-        padding-top: 25px;
+        padding: 25px 0 0;
     }
 
     p {
         font-size: 0.85em;
         text-align: center;
+        padding: 0 0 10px;
     }
 
     form {
         border-top: 1px solid white;
+        padding: 10px 0 0;
 
         .form-group {
             display: flex;
@@ -39,11 +56,12 @@
 
             label {
                 font-size: 0.85em;
+                font-family: 'Roboto Condensed', sans-serif;
             }
 
             select {
                 margin: 5px 0;
-                padding: 5px 5px;
+                padding: 10px 5px;
                 color: grey;
             }
 
@@ -60,10 +78,12 @@ input[type=submit]{
     color: white;
     text-transform: uppercase;
     margin: 25px 0 50px;
-    font-size: 0.7em;
+    font-size: 0.75em;
+    font-weight: 500;
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: black;
+        background-color: white;
+        color: $brand-color;
     }
 }
