@@ -7,7 +7,7 @@
 	
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE. DO NOT PUT THEM INSIDE THE build:css comments -->
 	<!-- Put Google Fonts Here -->
-
+	<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
 	<!-- end Google Fonts -->
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT THREE LINES OF CODE - THEY ARE IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THESE LINES -->
 	<!-- build:css styles/styles.min.css -->
@@ -17,7 +17,7 @@
 </head>
 <body>
 <!-- Put your HTML code here... -->
-<header>
+	<header>
 		<div class="left-links">
 			<a href="#0">Install Map</a>
 			<a href="#0">Product Literature</a>
@@ -47,57 +47,101 @@
 
 	<div class="slideshow">
 		<div class="slides">
-			<picture></picture>
+			<img src="images/header-slider-img-01.jpg" alt="Header Slider 01">
 		</div>
 
 		<div class="slides">
-			<picture></picture>
+			<img src="images/header-slider-img-02.jpg" alt="Header Slider 02">
 		</div>
 
 		<div class="slides">
-			<picture></picture>
+			<img src="images/header-slider-img-03.jpg" alt="Header Slider 03">
 		</div>
 
 		<h1>We design and fabricate indestructible wastewater screens. Enough said.</h1>
 
-		<a href="#0">View Products</a>
-		<a href="#0">View Services</a>
-		
 		<div class="slideshow-btn">
+			<a href="#0">View Products</a>
+			<a href="#0">View Services</a>
+		</div>
+		
+		<div class="slideshow-dot">
 			<span class="dot dot-1"></span>
 			<span class="dot dot-2"></span>
 			<span class="dot dot-3"></span>
+		</div>
+
+		<div class="slideshow-wave">
+			<img src="images/wave-white.png" alt="Wave White">
 		</div>
 	</div>
 
 	<div class="products">
 		<h3>Customized Per Order</h3>
 		<p>Just as no two treatment plants are the same, no two of our screening, grit handling, or sludge thickening products are either. We'll help determine exactly what you need.</p>
-		<div class="screening">
-			<picture></picture>
-			<h3>Screening</h3>
-			<a href="#0">View Selection</a>
+		<div class="product-container">
+			<div class="product screening">
+				<picture>
+					<img src="images/machine-01-912x834.png"
+						alt="Screening"
+						srcset="
+						images/machine-01-912x834.png 912w,
+						images/machine-01-768x702.png 768w,
+						images/machine-01-300x274.png 300w"
+						sizes="min-width: 300px) 300px 100vw">
+				</picture>
+				<h3>Screening</h3>
+				<a href="#0">View Selection</a>
+			</div>
+			<div class="product screenings-handling">
+				<picture>
+					<img src="images/machine-02-912x834.png"
+						alt="Screening"
+						srcset="
+						images/machine-02-912x834.png 912w,
+						images/machine-02-768x702.png 768w,
+						images/machine-02-300x274.png 300w"
+						sizes="min-width: 300px) 300px 100vw">
+				</picture>
+				<h3>Screenings Handling</h3>
+				<a href="#0">View Selection</a>
+			</div>
+			<div class="product grit-handling">
+				<picture>
+					<img src="images/machine-03-912x834.png"
+						alt="Screening"
+						srcset="
+						images/machine-03-912x834.png 912w,
+						images/machine-03-768x702.png 768w,
+						images/machine-03-300x274.png 300w"
+						sizes="min-width: 300px) 300px 100vw">
+				</picture>
+				<h3>Grit Handling</h3>
+				<a href="#0">View Selection</a>
+			</div>
+			<div class="product sludge-thickening">
+				<picture>
+					<img src="images/machine-04-912x834.png"
+						alt="Screening"
+						srcset="
+						images/machine-04-912x834.png 912w,
+						images/machine-04-768x702.png 768w,
+						images/machine-04-300x274.png 300w"
+						sizes="min-width: 300px) 300px 100vw">
+				</picture>
+				<h3>Sludge Thickening</h3>
+				<a href="#0">View Selection</a>
+			</div>
 		</div>
-		<div class="screenings-handling">
-			<picture></picture>
-			<h3>Screenings Handling</h3>
-			<a href="#0">View Selection</a>
-		</div>
-		<div clsas="grit-handling">
-			<picture></picture>
-			<h3>Grit Handling</h3>
-			<a href="#0">View Selection</a>
-		</div>
-		<div class="sludge-thickening">
-			<picture></picture>
-			<h3>Sludge Thickening</h3>
-			<a href="#0">View Selection</a>
-		</div>
+	</div>
+
+	<div class="product-advisor-wave">
+		<img src="images/wave-blue-dark.png" alt="Wave Blue Dark">
 	</div>
 
 	<div class="product-advisor">
 		<h3>Product Advisor</h3>
-		<h4>Find your project's perfect fit.</h4>
+		<p>Find your project's perfect fit.</p>
 
 		<form>
 			<div class="form-group product-type">
@@ -135,7 +179,7 @@
 				</select>
 			</div>
 
-			<input type="submit" value="Find My Product">
+			<input type="submit" id="submit" value="Find My Product">
 		</form>
 	</div>
 
@@ -184,8 +228,16 @@
 place the script tags between the build:js comment tags -->
 <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT FOUR LINES OF CODE - THEY ARE IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THESE LINES -->
 <!-- build:js scripts/script.min.js -->
-<script src="scripts/jquery-3.3.1.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
 <script src="scripts/script.js"></script>
+<script src="scripts/slideshow.js"></script>
 <!-- endbuild -->	
 </body>
 </html>
