@@ -1,32 +1,46 @@
 .newsletter {
     width: 100%;
     background-color: rgba(184, 221, 241, 1);
+    padding: 0 0 20px;
     
-    label {
+    h3 {
+        font-family: 'Roboto Condensed', sans-serif;
         color: rgba(21, 74, 102, 1);
         font-size: 1.25em;
+        font-weight: 400;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
     }
 
     form {
         display: flex;
+        justify-content: space-around;
 
-        input[type=text]{
-            padding: 10px 5px;
+        .subscribe {
+            width: 100%;
+            
+            input[type=text] {
+                padding: 10px 5px;
+                border: none;
+                width: 90%;
+            }
         }
-    }
-
-    input[type=submit]{
-        border: none;
-        color: white;
-        text-transform: uppercase;
-        background-color: rgba(0, 157, 220, 1);
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        padding: 10px;
-        transition: all 0.3s ease;
-        
-        &:hover {
-            background-color: $brand-color-grey;
+                
+        input[type=submit]{
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            background-color: rgba(0, 157, 220, 1);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 1.1em;
+            padding: 0 10px;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background-color: $brand-color-grey;
+            }
         }
     }
 }
