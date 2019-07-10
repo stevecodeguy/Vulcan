@@ -32,7 +32,7 @@ header {
         display: none;
     }
 
-    #menu {
+    .menu {
         padding: 10px 0;
 
         .bar {
@@ -42,11 +42,34 @@ header {
             width: 33px;
             height: 3px;
         }
+        
     }
-
+    
     .open-menu {
-        .bar {
+        .bar1 {
             background-color: red;
         }
+        .bar2 {
+            animation: fadeOut 0.4s linear forwards;
+        }
+        .bar3 {
+            background-color: yellow;
+        }
     }
+
+    .close-menu {
+        .bar2 {
+            animation: fadeIn 0.4s linear;
+        }
+    }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1 }
+  100% { opacity: 0 }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
 }
