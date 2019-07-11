@@ -2,7 +2,6 @@ header {
     position: absolute;
     top: 0;
     z-index: 5;
-    // background-color: rgba(37, 35, 35, 0.5);
     width: 100%;
     padding: 0;
 
@@ -62,10 +61,6 @@ header {
                 padding: 0;
                 margin-top: 5px;
                 background-color: rgba(37, 35, 35, 0.5);
-                
-                a:hover {
-                    background-color: $brand-color;
-                }
 
                 a {
                     height: 30px;
@@ -87,8 +82,16 @@ header {
                 }
 
                 .menuItem:hover {
+                    background-color: $brand-color;
                     .dropdownList {
                         display: block;
+
+                        .subMenu {
+                            background-color: rgba(black, 0.3);
+                        }
+                        .subMenu:hover {
+                            background-color: rgba(black, 0.6);
+                        }
                     }
                 }
             }
@@ -133,11 +136,8 @@ header {
     }
 }
 
-
-
 @keyframes slideUpMenu {
     0% { 
-        height: 310px;
         overflow: hidden;
     }
     100% { 
@@ -150,12 +150,8 @@ header {
         height: 50px;
         overflow: hidden;
     }
-    50% {
-        height: 310px;
-    }
     100% { 
         overflow: visible;
-        height: 310px;
     }
 }
 
