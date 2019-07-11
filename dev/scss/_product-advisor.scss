@@ -84,3 +84,20 @@
     }
 }
 
+@media (min-width: 768px) {
+    .position-correction {
+        .product-advisor-wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            img {
+                display: block;
+                width: 100%;
+                left: 0;
+                height: 120px;
+                transform: scale(1);
+            }
+        }
+    }
+}
