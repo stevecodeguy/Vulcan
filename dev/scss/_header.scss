@@ -204,13 +204,22 @@ header {
         }
 
         .svg-nav-container {
-            
-            nav {
-                display: flex;
-                justify-content: space-between;
-                flex-direction: row;
-    
+            overflow: visible;
 
+            nav {
+                margin: 60px 20px;
+
+                .mainNav {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 0.8em;
+                    
+                    .menuItem {
+                        padding: 8px;
+                        // text-align: center;
+                        height: 40px;
+                    }
+                }            
             }
         }
     }
