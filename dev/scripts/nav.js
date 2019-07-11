@@ -1,5 +1,5 @@
 const hamburger = document.getElementById('hamburger-container');
-const navContainer = document.getElementsByClassName('svg-nav-container')[0];
+const nav = document.getElementsByTagName('nav')[0];
 
 function openClose() {
     if (hamburger.classList.contains('close-menu') || hamburger.classList.contains('open-menu')) {
@@ -10,11 +10,11 @@ function openClose() {
     }
 
     if (hamburger.classList.contains('open-menu')) {
-        navContainer.classList.remove('animateCloseMenu');
-        navContainer.classList.add('animateOpenMenu');
+        nav.classList.remove('animateCloseMenu');
+        nav.classList.add('animateOpenMenu');
     } else {
-        navContainer.classList.remove('animateOpenMenu');
-        navContainer.classList.add('animateCloseMenu');
+        nav.classList.remove('animateOpenMenu');
+        nav.classList.add('animateCloseMenu');
     }
 }
 
