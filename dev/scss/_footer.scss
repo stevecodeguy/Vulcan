@@ -76,3 +76,23 @@ footer {
         }
     }
 }
+
+@media only screen and (min-width: 768px){
+    footer {
+        flex-direction: row;
+
+        .footer-bottom {
+            
+        }
+        .svg-container {
+            width: auto;
+            
+            a{
+                svg{
+                    width: 160px;
+                    height: 66px;
+                }
+            }
+        }
+    }
+}
