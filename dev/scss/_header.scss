@@ -20,9 +20,24 @@ header {
         }
     }
 
-    nav {
-        display: none;
+    .svg-nav-container {
+        height: auto;
+
+        nav {
+            display: block;
+            margin: 0;
+            width: 100%;
+    
+            ul {
+                padding: 0;
+    
+                a {
+                    width: 100%;
+                }
+            }
+        }
     }
+
 
     .left-links {
         display: none;
@@ -47,29 +62,55 @@ header {
     
     .open-menu {
         .bar1 {
-            background-color: red;
+            animation: topRotateDown 0.2s linear forwards;
         }
         .bar2 {
             animation: fadeOut 0.4s linear forwards;
         }
         .bar3 {
-            background-color: yellow;
+            animation: bottomRotateUp 0.2s linear forwards;
         }
     }
 
     .close-menu {
+        .bar1 {
+            animation: rotateReturn 2.2s linear backwards;
+        }
         .bar2 {
             animation: fadeIn 0.4s linear;
         }
     }
 }
 
+@keyframes topRotateReturn {
+    0% { 
+        transform: translateY(10px) rotate(-45deg);
+    }
+    100% { 
+        transform: translateY(-10px) rotate(45deg);
+    }
+}
+
+@keyframes bottomRotateUp {
+    0% { }
+    100% { 
+        transform: translateY(-8px) rotate(45deg);
+    }
+}
+
+@keyframes topRotateDown {
+    0% { }
+    100% { 
+        transform: translateY(10px) rotate(-45deg);
+    }
+}
+
 @keyframes fadeOut {
-  0% { opacity: 1 }
-  100% { opacity: 0 }
+    0% { opacity: 1 }
+    100% { opacity: 0 }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0 }
-  100% { opacity: 1 }
+    0% { opacity: 0 }
+    100% { opacity: 1 }
 }
