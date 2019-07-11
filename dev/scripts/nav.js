@@ -10,9 +10,11 @@ function openClose() {
     }
 
     if (hamburger.classList.contains('open-menu')) {
-        nav.style.display = 'block';
+        nav.classList.remove('animateCloseMenu');
+        nav.classList.add('animateOpenMenu');
     } else {
-        nav.style.display = 'none';
+        nav.classList.remove('animateOpenMenu');
+        nav.classList.add('animateCloseMenu');
     }
 }
 
