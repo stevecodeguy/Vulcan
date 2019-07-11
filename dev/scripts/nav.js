@@ -1,4 +1,4 @@
-const hamburger = document.getElementsByClassName('menu')[0];
+const hamburger = document.getElementById('hamburger-container');
 const navContainer = document.getElementsByClassName('svg-nav-container')[0];
 
 function openClose() {
@@ -19,3 +19,4 @@ function openClose() {
 }
 
 hamburger.addEventListener('click', openClose);
+// hamburger.addEventListener('click', () => console.log('yo'));
