@@ -197,25 +197,20 @@ header {
     100% { opacity: 1 }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+    header {
+        .menu {
+            display: none;
+        }
 
-    .menu {
-        display: none;
-        
-        #hamburger-container {
-            position: absolute;
-            top: 8px;
-            right: 0px;
-            padding: 0 3px;
-            z-index: 30;
-            cursor: pointer;
+        .svg-nav-container {
+            
+            nav {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+    
 
-            .bar {
-                display: block;
-                background-color: white;
-                margin: 6px;
-                width: 33px;
-                height: 3px;
             }
         }
     }
