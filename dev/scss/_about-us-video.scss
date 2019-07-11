@@ -6,8 +6,26 @@
         width: 100%;
         margin: 0 auto;
         display: block;
-        max-width: 600px;
-        max-height: 350px;
+        max-width: 500px;
+        max-height: 300px;
         border: 20px solid $brand-color-dark-blue;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .about-us-video {
+        .video-container {
+            max-width: 666.66px;
+            max-height: 395px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1620px){
+    .about-us-video {
+        .video-container {
+            max-width: 933.33px;
+            max-height: 553px;
+        }
     }
 }
