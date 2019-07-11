@@ -19,4 +19,3 @@ function openClose() {
 }
 
 hamburger.addEventListener('click', openClose);
-// hamburger.addEventListener('click', () => console.log('yo'));
