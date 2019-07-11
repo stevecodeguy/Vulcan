@@ -15,7 +15,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-transform: uppercase;
-        font-size: 1.5em;
+        font-size: 1.8em;
         width: 100%;
         padding: 0 10px;
         margin: 0;
@@ -43,8 +43,8 @@
         border: 1px solid white;
         padding: 10px;
         margin: 7.5px auto;
-        font-size: 0.9em;
-        font-weight: 500;
+        font-size: 1.1em;
+        font-weight: 700;
         transition: all 0.3s ease;
         text-transform: uppercase;
         width: 135px;
@@ -55,3 +55,39 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px){
+    .about-us {
+        h2 {
+            font-size: 2em;
+            width: 75%;
+        }
+
+        p {
+            font-size: 1em;
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .about-us {
+        h2 {
+            font-size: 3em;
+
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .about-us {
+        h2 {
+            width: 66.66%;
+        }
+
+        p {
+            width: 40%;
+        }
+    }
+}
+
