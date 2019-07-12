@@ -13,10 +13,25 @@ footer {
 
         .social-media-links {
             margin: 15px 0 15px;
+
+            a{
+                i {
+                   font-size: 1.4em;
+                   padding-right: 2px;
+                }
+            }
         }
     
         .footer-links {
             margin: 0 0 15px;
+
+            a{
+                padding-right: 8px; 
+                i {
+                   font-size: 1.2em;
+                   padding-right: 3px; 
+                }
+            }
         }
     }
 
