@@ -8,7 +8,7 @@ header {
     .header-shade {
         position: absolute;
         width: 100%;
-        height: 55px;
+        height: 50px;
         background-color: rgba(37, 35, 35, 0.5);
     }
 
@@ -17,6 +17,65 @@ header {
         width: 100px;
         height: 50px;
         padding: 5px;
+    }
+
+    .animateOpenMenu {
+        .mainNav {
+            animation: slideUpMenu 0.4s linear forwards;
+        }
+    }
+
+    .animateCloseMenu { 
+        margin-top: 0; 
+        .mainNav {
+            animation: slideDownMenu 0.4s linear forwards;
+        }
+    }
+
+    nav {
+        margin: 0;
+        overflow: hidden;
+        
+        .mainNav {
+            transform: translateY(-100%);
+            padding: 0;
+            margin-top: 5px;
+            background-color: rgba(37, 35, 35, 0.5);
+
+            a {
+                height: 30px;
+                width: 100%;
+                margin-left: 5px;
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            .dropdownList {
+                text-indent: 10px;
+                padding: 0;
+                display: none;
+
+                li {
+                    width: 100%;
+                    background-color: rgba($brand-color, 0.7);
+                }
+            }
+
+            .menuItem:hover {
+                background-color: $brand-color;
+                .dropdownList {
+                    display: block;
+
+                    .subMenu {
+                        background-color: rgba(black, 0.3);
+                    }
+                    .subMenu:hover {
+                        background-color: rgba(black, 0.6);
+                    }
+                }
+            }
+        }
     }
 
     .menu {
@@ -42,68 +101,24 @@ header {
         }
     }
     
-    .svg-nav-container {
-        display: block;
-        height: 50px;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-
-        svg {
-            width: 100px;
+    .full-nav {
+        .svg-nav-container {
+            display: block;
             height: 50px;
-        }
+            width: 100%;
+            overflow: hidden;
+            position: relative;
 
-        nav {
-            margin: 0;
-
-            .mainNav {
-                padding: 0;
-                margin-top: 5px;
-                background-color: rgba(37, 35, 35, 0.5);
-
-                a {
-                    height: 30px;
-                    width: 100%;
-                    text-decoration: none;
-                    color: white;
-                    text-transform: uppercase;
-                }
-
-                .dropdownList {
-                    text-indent: 10px;
-                    padding: 0;
-                    display: none;
-
-                    li {
-                        width: 100%;
-                        background-color: rgba($brand-color, 0.7);
-                    }
-                }
-
-                .menuItem:hover {
-                    background-color: $brand-color;
-                    .dropdownList {
-                        display: block;
-
-                        .subMenu {
-                            background-color: rgba(black, 0.3);
-                        }
-                        .subMenu:hover {
-                            background-color: rgba(black, 0.6);
-                        }
-                    }
-                }
+            svg {
+                width: 100px;
+                height: 50px;
             }
         }
-    }
 
-    .left-links {
-        display: none;
-    }
-
-    .right-links {
-        display: none;
+        .left-links,
+        .right-links {
+            display: none;
+        }
     }
     
     .open-menu {
@@ -126,32 +141,27 @@ header {
             animation: fadeIn 0.4s linear;
         }
     }
-
-    .animateOpenMenu {
-        animation: slideDownMenu 0.4s linear forwards;
-    }
-
-    .animateCloseMenu {  
-        animation: slideUpMenu 0.4s linear forwards;
-    }
 }
 
 @keyframes slideUpMenu {
-    0% { 
-        overflow: hidden;
+    0% {
+        margin-top: -5px; 
+        transform: translateY(-101%);
     }
     100% { 
-        height: 50px;
+        margin-top: 0; 
+        transform: translateY(0);
     }
 }
 
 @keyframes slideDownMenu {
     0% { 
-        height: 50px;
-        overflow: hidden;
+        margin-top: 0; 
+        transform: translateY(0);
     }
     100% { 
-        overflow: visible;
+        margin-top: -5px; 
+        transform: translateY(-101%);
     }
 }
 
@@ -199,26 +209,160 @@ header {
 
 @media (min-width: 768px) {
     header {
+        .header-shade,
         .menu {
             display: none;
         }
 
-        .svg-nav-container {
-            overflow: visible;
+        .full-nav {
+            display: flex;
+            justify-content: space-between;
+            
+            .left-links,
+            .right-links {
+                display: flex;
+                justify-content: center;
+                white-space: nowrap;
+                width: 40%;
+                margin-top: 10px;
+                
+                a {
+                    color: white;
+                    text-transform: uppercase;
+                    width: 100%;
 
-            nav {
-                margin: 60px 20px;
-
-                .mainNav {
-                    display: flex;
-                    justify-content: space-between;
-                    font-size: 0.8em;
-                    
-                    .menuItem {
-                        padding: 8px;
-                        height: 40px;
+                    i {
+                        padding: 0 8px;
                     }
-                }            
+                }
+            }
+            .left-links {
+                order: 1;
+                text-align: right;
+            }
+            
+            .right-links {
+                order: 3;
+            }
+            
+            .svg-nav-container {
+                order: 2;
+                height: 100px;
+                width: 170px;
+
+                a {
+                    margin: 20px 0;
+                    svg {
+                        width: 160px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+        
+        nav {
+            overflow: visible;
+            position: absolute;
+            width: 80%;
+            height: 40px;
+
+            left: 50%;
+            top: 140px;
+            transform: translateX(-50%);
+            background-color: rgba(37, 35, 35, 0.5);
+            
+            .mainNav {
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                font-size: 0.8em;
+                transform: translateY(0);
+                background-color: transparent;
+
+                .menuItem {
+                    height: 40px;
+                    a {
+                        height: 100%;
+                        padding: 12px;
+                        margin: 0;
+                    }
+                    
+                    .dropdownList {
+                        background-color: rgba($brand-color, 0.9);
+                        position: absolute;
+
+                        .subMenu {
+                            display: block;
+                        }
+                    }
+                }
+
+                .menuMobileOnly {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        .full-nav {
+            margin: 0 4%;
+            
+            .left-links,
+            .right-links {
+                a {
+                    width: 150px;
+                }
+            }
+
+            .left-links {
+                text-align: left;
+                justify-content: flex-start;
+            }
+
+            .right-links {
+                text-align: right;
+                justify-content: flex-end;
+            }
+        }
+
+        nav {
+            width: 75%;
+            padding: 0 30px;
+
+            .mainNav {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    header {
+        nav {
+            width: 65%;
+            height: 75px;
+            padding: 0 30px;
+
+            .mainNav {
+                font-size: 1em;
+                .menuItem {
+                    height: 75px;
+                    a {
+                        padding: 30px;
+                    }
+                    .dropdownList{
+                        .subMenu {
+                            height: 55px;
+                            a {
+                                padding: 18px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

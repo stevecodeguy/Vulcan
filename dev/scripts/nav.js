@@ -1,5 +1,5 @@
 const hamburger = document.getElementById('hamburger-container');
-const navContainer = document.getElementsByClassName('svg-nav-container')[0];
+const navContainer = document.getElementsByTagName('nav')[0];
 
 function openClose() {
     if (hamburger.classList.contains('close-menu') || hamburger.classList.contains('open-menu')) {
