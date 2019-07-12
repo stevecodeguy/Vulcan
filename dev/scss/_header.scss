@@ -59,6 +59,10 @@ header {
                 li {
                     width: 100%;
                     background-color: rgba($brand-color, 0.7);
+                    
+                    a {
+                        white-space: nowrap;
+                    }
                 }
             }
 
