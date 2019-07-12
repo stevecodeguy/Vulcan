@@ -116,6 +116,19 @@
         grid-template-areas:
         "contact location";
 
+        .contact-wave {
+            position: absolute;
+            bottom: -45px;
+            left: 0;
+            
+            img {
+                display: block;
+                width: 100%;
+                height: 120px;
+                transform: scale(1);
+            }
+        }
+
         .contact-us {
             padding-top: 50%;
             min-height: 372px;
@@ -129,7 +142,7 @@
                     color: white;
                     background-color: $brand-color;
                     border: 1px solid $brand-color;
-                   
+                
                     &:hover {
                         background-color: $brand-color-grey;
                         border: 1px solid $brand-color-grey;
@@ -204,10 +217,6 @@
     .contact-location {
         .contact-us {
             min-height: 467px;
-
-            .contact-us-text {
-
-            }
         }
 
         .location {
