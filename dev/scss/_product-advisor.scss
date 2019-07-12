@@ -100,4 +100,54 @@
             }
         }
     }
+
+    .product-advisor {
+
+        h3 {
+            font-size: 2em;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            .form-group {
+                justify-content: space-between;
+                width: 17.5%;
+            }
+        }
+
+        input[type=submit]{
+            display: block;
+            // width: 175px;
+            width: 96%;
+            height: 40px;
+            margin: 25px 0 10px;
+            font-size: 1em;
+            margin: 25px 0 50px;
+            
+            &:hover {
+                background-color: $brand-color-grey;
+                color: white;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .product-advisor {
+        p {
+            font-size: 1em;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .product-advisor{
+        h3 {
+            font-size: 2.5em;
+        }
+    }
 }
